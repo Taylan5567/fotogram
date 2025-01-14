@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/favicon_fotogram.png" type="image/png">
+    <title>Fotogram</title>
+</head>
+<header>
+    <img class="logo_fg" src="./img/logo_fotogram.svg" alt="">
+</header>
+<body>
+<div class="selectbuttons">
+    <button onclick="filterImages('all')">Alle Bilder</button>
+    <button onclick="filterImages('winter')">Winter</button>
+    <button onclick="filterImages('stadium')">Stadium</button>
+    <button onclick="filterImages('wald')">Wälder</button>
+</div>
+<div id="gallery" class="gallery"></div>
+
+<div id="gallery" class="gallery"></div>
+
+<div id="overlay" class="overlay">
+    <div class="overlay-box">
+        <button id="prevButton" class="arrow left-arrow">←</button>
+        <img id="overlayImage" src="" alt="">
+        <div id="imageCount" class="image-count"></div>
+        <button id="nextButton" class="arrow right-arrow">→</button>
+        <button id="closeButton" class="close-button">✕</button>
+    </div>
+</div>
+</body>
+</html>
